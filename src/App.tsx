@@ -12,7 +12,7 @@ import PixelToPitch from './pages/pixelToPitch';
 import Uxelerate from './pages/uxelerate'
 import Community from "./pages/Community";
 import Resources from "./pages/Resources";
-import NotFound from "./pages/NotFound";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -32,7 +32,7 @@ const App = () => (
           <Route path="/community" element={<Community />} />
           <Route path="/resources" element={<Resources />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

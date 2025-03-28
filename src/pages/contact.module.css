@@ -1,0 +1,113 @@
+/* Contact Page Styling */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.subHeading {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+/* Form Section */
+.form {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #bbb;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: white;
+  font-size: 1rem;
+}
+
+.form textarea {
+  resize: none;
+}
+
+/* Submit Button */
+.sendButton {
+  background: #e63946;
+  color: white;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sendButton:hover {
+  background: #c0273a;
+}
+
+/* WhatsApp Button */
+.whatsappButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.whatsappButton:hover {
+  background: #1ebe5d;
+}
+
+.whatsappIcon {
+  font-size: 1.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
