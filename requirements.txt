@@ -1,0 +1,4 @@
+Flask==2.0.1
+python-chess==1.999
+numpy==1.24.4
+werkzeug==2.0.1
