@@ -16,6 +16,7 @@ import i from "../images/hackblocks/i.jpg"
 import j from "../images/hackblocks/j.jpg"
 import k from "../images/hackblocks/k.jpg"
 import o from "../images/hackblocks/o.jpg"
+import bg from "../images/hackblocks/hbbg.jpg"
 const eventImages = [
   {
     src: o,
@@ -96,7 +97,7 @@ export default function Hackblocks() {
       {/* Hero Section */}
       <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
-          src="/placeholder.svg?height=1080&width=1920"
+          src={bg}
           alt="Event cover image"
           className="absolute inset-0 w-full h-full object-cover"
         />

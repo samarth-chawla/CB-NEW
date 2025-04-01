@@ -1,6 +1,6 @@
 
 import { Calendar, Clock, MapPin } from "lucide-react"
-
+import bg from "../images/uxlerate/ux3.jpg"
 import React, { useEffect } from 'react';
 import Gallery from "./gallery";
 export default function Uxelerate() {
@@ -21,12 +21,18 @@ export default function Uxelerate() {
     { src: "/src/images/uxlerate/ux11.JPG", alt: "Event 11" },
     { src: "/src/images/uxlerate/ux12.JPG", alt: "Event 12" },
   ]
+  const speakerImages = [
+    { src: "/src/images/uxlerate/p1.JPG", alt: "Event 1" },
+    { src: "/src/images/uxlerate/p2.JPG", alt: "Event 2" },
+    { src: "/src/images/pixelToPitch/p3.JPG", alt: "Event 3" },
+    { src: "/src/images/pixelToPitch/p4.JPG", alt: "Event 4" },
+  ]
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
-          src="/placeholder.svg?height=1080&width=1920"
+          src={bg}
           alt="Event cover image"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -93,7 +99,7 @@ export default function Uxelerate() {
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tight text-center mb-10 animate-fade-in">Featured Speakers</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
+            {speakerImages.map((i,index) => (
               <div
                 key={i}
                 className="bg-background rounded-lg overflow-hidden shadow-md animate-slide-up"
@@ -101,8 +107,8 @@ export default function Uxelerate() {
               >
                 <div className="aspect-square relative">
                   <img
-                    src={`/placeholder.svg?height=300&width=300&text=Speaker ${i}`}
-                    alt={`Speaker ${i}`}
+                    src={`${i.src}`}
+                    alt={`Speaker ${index}`}
                     className="w-full h-full object-cover"
                   />
                 </div>

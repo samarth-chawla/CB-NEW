@@ -2,6 +2,10 @@
 import { Card } from "../components/card";
 import PageWrapper from "@/components/PageWrapper";
 import Header from "../components/Header"
+import hackblocksImg from "../images/hackblocks/hbbg.jpg"
+import campuscarnivalImg from "../images/campusCarnival/f.jpg"
+import uxlerateImg from "../images/uxlerate/ux3.jpg"
+import p2pImg from "../images/pixelToPitch/pxpbg.jpg"
 export function EventsPage() {
 
     return (
@@ -12,10 +16,10 @@ export function EventsPage() {
                     <p>Past Events 🎉</p>
                 </div>
                 <div className="w-full h-full py-10 flex flex-wrap justify-center gap-10">
-                    <Card title="Hackblocks 1.0" link={"/events/hackblocks"} />
-                    <Card title="Campus Carnival 2.0" link={"/events/carnival"} />
-                    <Card title="Pixel To Pitch" link={"/events/p2p"} />
-                    <Card title="UXelerate" link={"/events/uxelerate"} />
+                    <Card title="Hackblocks 1.0" link={"/events/hackblocks"} bg={hackblocksImg}/>
+                    <Card title="Campus Carnival 2.0" link={"/events/carnival"} bg={campuscarnivalImg}/>
+                    <Card title="Pixel To Pitch" link={"/events/p2p"} bg={p2pImg}/>
+                    <Card title="UXelerate" link={"/events/uxelerate"} bg={uxlerateImg}/>
                 </div>
             </div>
         </PageWrapper>

@@ -6,7 +6,25 @@ const galleryImages = [
   {
     src: "https://drive.google.com/file/d/1q99Kz6nHDJ4pgC_DxzYi6zIpAFFLN2jI/view",
     alt: "Event image 1",
+  },
+  {
+    src: "/placeholder.svg?height=600&width=800&text=Event%20Image%206",
+    alt: "Event image 2",
 
+  },
+  {
+    src: "/placeholder.svg?height=600&width=800&text=Event%20Image%207",
+    alt: "Event image 3",
+ 
+  },
+  {
+    src: "/placeholder.svg?height=600&width=800&text=Event%20Image%208",
+    alt: "Event image 4",
+ 
+  },
+  {
+    src: "/placeholder.svg?height=600&width=800&text=Event%20Image%209",
+    alt: "Event image 5",
 
   },
   {

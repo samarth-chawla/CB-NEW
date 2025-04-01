@@ -24,17 +24,17 @@ const galleryImages = [
   {
     src: b,
     alt: "Event image 2",
-   
+
   },
   {
     src: c,
     alt: "Event image 3",
-  
+
   },
   {
     src: d,
     alt: "Event image 4",
-  
+
   },
   {
     src: e,
@@ -50,12 +50,12 @@ const galleryImages = [
   {
     src: g,
     alt: "Event image 7",
- 
+
   },
   {
     src: h,
     alt: "Event image 8",
- 
+
   },
   {
     src: i,
@@ -70,7 +70,7 @@ const galleryImages = [
   {
     src: k,
     alt: "Event image 11",
- 
+
   },
   {
     src: l,
@@ -78,16 +78,22 @@ const galleryImages = [
 
   },
 ]
+const speakerImages = [
+  { src: "/src/images/campusCarnival/p1.JPG", alt: "Event 1" },
+  { src: "/src/images/campusCarnival/p2.JPG", alt: "Event 2" },
+  { src: "/src/images/campusCarnival/p3.JPG", alt: "Event 3" },
+  { src: "/src/images/hackblocks/p4.JPG", alt: "Event 4" },
+]
 export default function Carnival() {
   useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
-          src="/placeholder.svg?height=1080&width=1920"
+          src={f}
           alt="Event cover image"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -109,22 +115,22 @@ export default function Carnival() {
           <div className="md:col-span-2 space-y-6 animate-fade-in">
             <h2 className="text-3xl font-bold tracking-tight">Event Summary</h2>
             <p className="text-lg text-muted-foreground">
-            Campus Carnival brought together aspiring technologists in a vibrant showcase of talent across machine learning,
-             web development, and artificial intelligence. The event combined competitive challenges with learning opportunities,
+              Campus Carnival brought together aspiring technologists in a vibrant showcase of talent across machine learning,
+              web development, and artificial intelligence. The event combined competitive challenges with learning opportunities,
               creating an energetic atmosphere where participants could demonstrate their skills while expanding their knowledge.
             </p>
             <p className="text-lg text-muted-foreground">
-            The event culminated in a showcase where winners demonstrated their solutions. Many participants left with:
-            <ul className="list-disc">
+              The event culminated in a showcase where winners demonstrated their solutions. Many participants left with:
+              <ul className="list-disc">
                 <li>Portfolio-worthy projects demonstrating practical applications.</li>
                 <li>New connections with peers and industry contacts.</li>
                 <li>Deeper understanding of emerging technologies and methodologies.</li>
 
-            </ul>
+              </ul>
 
 
             </p>
-            
+
           </div>
           <div className="bg-muted rounded-lg p-6 animate-slide-in-right">
             <h3 className="text-xl font-semibold mb-4">Event Details</h3>
@@ -161,7 +167,7 @@ export default function Carnival() {
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tight text-center mb-10 animate-fade-in">Featured Speakers</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
+            {speakerImages.map((i,index) => (
               <div
                 key={i}
                 className="bg-background rounded-lg overflow-hidden shadow-md animate-slide-up"
@@ -169,8 +175,8 @@ export default function Carnival() {
               >
                 <div className="aspect-square relative">
                   <img
-                    src={`/placeholder.svg?height=300&width=300&text=Speaker ${i}`}
-                    alt={`Speaker ${i}`}
+                    src={i.src}
+                    alt={`Speaker ${index}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -187,7 +193,7 @@ export default function Carnival() {
       {/* Image Gallery */}
       <section className="py-12 md:py-16 container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tight text-center mb-10 animate-fade-in">Event Gallery</h2>
-        <Gallery images={galleryImages}/>
+        <Gallery images={galleryImages} />
       </section>
 
       {/* Footer */}
@@ -209,7 +215,7 @@ export default function Carnival() {
           </div>
         </div>
       </footer>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
