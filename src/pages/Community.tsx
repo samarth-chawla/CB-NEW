@@ -381,68 +381,8 @@ const Community = () => {
           </div>
         </section>
       )}
-      
-      {/* Interest Groups Section */}
-      {/* {activeTab === "groups" && (
-        <section className="section bg-campus-light-gray">
-          <div className="container mx-auto">
-            <div className="text-center max-w-2xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 reveal-animation">
-                Special Interest <span className="text-campus-red">Groups</span>
-              </h2>
-              <p className="text-campus-dark-gray reveal-animation" style={{ "--reveal-delay": 1 } as React.CSSProperties}>
-                Join a group that aligns with your technical interests and collaborate with like-minded peers.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {communityGroups.map((group, index) => (
-                <div 
-                  key={group.id} 
-                  className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 reveal-animation"
-                  style={{ "--reveal-delay": (index % 6) + 2 } as React.CSSProperties}
-                >
-                  <div className="mb-5 p-3 inline-block rounded-full bg-campus-red/10">
-                    {group.icon}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">{group.name}</h3>
-                  <p className="text-gray-600 mb-4">{group.description}</p>
-                  
-                  <div className="flex items-center justify-between text-sm text-gray-500 mt-6 pt-4 border-t border-gray-100">
-                    <div className="flex items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1 text-campus-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                      </svg>
-                      {group.members} Members
-                    </div>
-                    <div className="flex items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1 text-campus-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                      </svg>
-                      {group.projects} Projects
-                    </div>
-                  </div>
-                  
-                  <button className="w-full mt-6 py-2 border border-campus-red text-campus-red font-medium rounded-md hover:bg-campus-red hover:text-white transition-all">
-                    Join Group
-                  </button>
-                </div>
-              ))}
-            </div>
-            
-            <div className="mt-16 p-8 bg-white rounded-xl shadow-lg max-w-3xl mx-auto text-center reveal-animation" style={{ "--reveal-delay": 8 } as React.CSSProperties}>
-              <h3 className="text-xl font-bold mb-4">Want to start a new interest group?</h3>
-              <p className="text-gray-600 mb-6">
-                Have a technical interest not represented in our current groups? Propose a new interest group and lead the community!
-              </p>
-              <button className="btn-primary">
-                Submit a Proposal
-              </button>
-            </div>
-          </div>
-        </section>
-      )} */}
-      
+    
+  
       {/* Join Community Section */}
       <section className="section bg-gradient-to-r from-campus-black to-campus-red text-white">
         <div className="container mx-auto text-center max-w-3xl">
@@ -452,14 +392,14 @@ const Community = () => {
           <p className="text-xl mb-8 reveal-animation" style={{ "--reveal-delay": 1 } as React.CSSProperties}>
             Connect with peers, learn from experts, and grow your technical skills in a supportive environment.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center reveal-animation" style={{ "--reveal-delay": 2 } as React.CSSProperties}>
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center reveal-animation" style={{ "--reveal-delay": 2 } as React.CSSProperties}>
             <button className="btn-secondary bg-white text-campus-black hover:bg-opacity-90">
               Become a Member
             </button>
             <button className="btn-outline border-white text-white hover:bg-white hover:text-campus-black">
               Learn More
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
       

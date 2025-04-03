@@ -86,10 +86,10 @@ export default function Hackblocks() {
     window.scrollTo(0, 0);
   }, []);
   const speakerImages = [
-    { src: "/src/images/hackblocks/p1.JPG", alt: "Event 1" },
-    { src: "/src/images/hackblocks/p2.JPG", alt: "Event 2" },
-    { src: "/src/images/hackblocks/p3.JPG", alt: "Event 3" },
-    { src: "/src/images/hackblocks/p4.JPG", alt: "Event 4" },
+    { src: "/src/images/hackblocks/p1.JPG", alt: "Event 1",name: "Akansha Rani" },
+    { src: "/src/images/hackblocks/p2.JPG", alt: "Event 2",name: "Santosh Kumar Mishra" },
+    { src: "/src/images/hackblocks/p3.JPG", alt: "Event 3",name: "Navika Chhauda" },
+    { src: "/src/images/hackblocks/p4.JPG", alt: "Event 4",name: "Sayak Saha" },
   ]
   
   return (
@@ -177,8 +177,8 @@ export default function Hackblocks() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg">Speaker Name</h3>
-                  <p className="text-muted-foreground">Position, Company</p>
+                  <h3 className="font-semibold text-lg">{i.name}</h3>
+                  {/* <p className="text-muted-foreground">Position, Company</p> */}
                 </div>
               </div>
             ))}
@@ -198,13 +198,13 @@ export default function Hackblocks() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground">© 2025 Tech Conference. All rights reserved.</p>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                Privacy Policy
+              <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                Home
               </a>
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact Us
               </a>
             </div>

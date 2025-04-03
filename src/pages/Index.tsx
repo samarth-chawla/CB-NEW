@@ -230,10 +230,10 @@ const Index = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "500+", label: "Active Members", delay: 2 },
-              { number: "50+", label: "Events Hosted", delay: 3 },
-              { number: "20+", label: "Industry Partners", delay: 4 },
-              { number: "100+", label: "Projects Completed", delay: 5 }
+              { number: "80+", label: "Active Members", delay: 2 },
+              { number: "20+", label: "Events Hosted", delay: 3 },
+              { number: "5+", label: "Industry Partners", delay: 4 },
+              { number: "30+", label: "Projects Completed", delay: 5 }
             ].map((stat, index) => (
               <div 
                 key={index} 
@@ -261,7 +261,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center reveal-animation" style={{ "--reveal-delay": 2 } as React.CSSProperties}>
             <Link to="/community" className="btn-secondary bg-white text-campus-black hover:bg-opacity-90">
-              Join Now
+              Explore Team 
             </Link>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-campus-black">
               Contact Us

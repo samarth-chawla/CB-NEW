@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-campus-black text-white py-16 px-8 relative overflow-hidden">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
           {/* Logo and description */}
           <div className="space-y-4 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2">
@@ -97,8 +97,8 @@ const Footer = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-campus-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@campusblocks.edu" className="text-gray-300 hover:text-campus-red transition-colors">
-                  info@campusblocks.edu
+                <a href="mailto:campusblock.bvp@bvcoend.ac.in" className="text-gray-300 hover:text-campus-red transition-colors">
+                  campusblock.bvp@bvcoend.ac.in
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
           
           {/* Newsletter */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="text-lg font-semibold relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-10 after:h-0.5 after:bg-campus-red">
               Newsletter
             </h3>
@@ -134,7 +134,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
         
         <div className="mt-16 pt-8 border-t border-white/10 text-center text-gray-400">
